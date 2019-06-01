@@ -16,3 +16,7 @@ install:
 	install -m0644 whatsapp-web-launcher.desktop "$(DESTDIR)/$(DATADIR)/applications/whatsapp-web-launcher.desktop"
 	install -m0644 alias.sh "$(DESTDIR)/$(SYSCONFDIR)/profile.d/whatsapp-web-launcher.sh"
 	
+check:
+	desktop-file-validate whatsapp-web-launcher.desktop
+	shellcheck whatsapp-web-launcher.sh
+	shellcheck alias.sh
