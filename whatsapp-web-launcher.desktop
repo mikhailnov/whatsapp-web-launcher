@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=WhatsApp Web
+Exec=xdg-open https://web.whatsapp.com
+Icon=whatsapp-web-launcher.svg
+Terminal=false
+StartupNotify=false
