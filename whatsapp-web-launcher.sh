@@ -6,12 +6,13 @@
 # TODO: migrate to gettext if someone wants other languages here
 if echo "$LANG" | grep -Ei "^ru_|^ru$" | grep -Eiq 'utf8|utf-8'
 	then
-		str1="Браузер по умолчанию не установлен или не поддерживается WhatsApp-ом, а подедрживаемые им браузеры не были найдены! Рекомендуем установить Chromium или Firefox."
+		str1="Браузер по умолчанию не установлен или не поддерживается WhatsApp-ом, а поддерживаемые им браузеры не были найдены! Рекомендуем установить Chromium или Firefox."
 	else
 		str1="Default browser is not set or is not supported, and no supported browsers have been found! We recommend to install Chromium or Firefox."
 fi
 
 zenity_error(){
+	echo "$*" 1>&2
 	zenity --error --width=300 --title='WhatsApp Web Launcher' --text="$*"
 }
 
