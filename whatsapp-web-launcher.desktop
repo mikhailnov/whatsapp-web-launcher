@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=WhatsApp Web
-Exec=xdg-open https://web.whatsapp.com
+Exec=whatsapp-web-launcher
 Icon=whatsapp-web-launcher.svg
 Terminal=false
 StartupNotify=false
