@@ -2,7 +2,13 @@
 Version=1.0
 Type=Application
 Name=WhatsApp Web
+GenericName=WhatsApp messenger (web version)
+GenericName[ru]=Веб-версия WhatsApp
+Comment=Open WhatsApp in web browser
+Comment[ru]=Открыть WhatsApp в браузере
+Categories=Network;
 Exec=whatsapp-web-launcher
 Icon=whatsapp-web-launcher.svg
 Terminal=false
 StartupNotify=false
+Encoding=UTF-8
