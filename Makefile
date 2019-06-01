@@ -20,3 +20,9 @@ check:
 	desktop-file-validate whatsapp-web-launcher.desktop
 	shellcheck whatsapp-web-launcher.sh
 	shellcheck alias.sh
+
+uninstall:
+	rm -fv "$(DESTDIR)/$(BINDIR)/whatsapp-web-launcher"
+	rm -fv "$(DESTDIR)/$(DATADIR)/icons/whatsapp-web-launcher.svg"
+	rm -fv "$(DESTDIR)/$(DATADIR)/applications/whatsapp-web-launcher.desktop"
+	rm -fv "$(DESTDIR)/$(SYSCONFDIR)/profile.d/whatsapp-web-launcher.sh"
